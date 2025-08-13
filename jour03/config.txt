@@ -1,0 +1,4 @@
+nom=koerber
+prenom=pierre
+age=54
+pref=red
