@@ -7,7 +7,13 @@ Lancez chaque jour :
 python jour1/hello.py
 ```
 
+## Conversion d'un md ne présentation powerpoint
+
 pandoc chapitres.md -t pptx -o presentation.pptx
+
+## Bonus - jupyter notebook
+
+https://jupyter.org/try-jupyter/lab/
 
 ## Contenu rapide
 
