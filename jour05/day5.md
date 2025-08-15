@@ -28,6 +28,136 @@ fruits.remove("banane")  # supprime un élément
 
 ---
 
+#### 1.1.1 LISTE
+
+Oui 👍, je vais te faire une description claire et complète pour bien expliquer à ton fils la différence entre **`list`** et **`tuple`**, dans un format simple à intégrer dans ton support de cours.
+
+---
+
+##### 📦 Comparaison `list` vs `tuple` en Python
+
+| Type        | Description                                                                                                                 | Exemple                         | Peut être modifié ? | Quand l’utiliser                                                                           |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | ------------------- | ------------------------------------------------------------------------------------------ |
+| **`list`**  | Collection **ordonnée** et **modifiable** d’éléments. On peut **ajouter, supprimer ou changer** des valeurs après création. | `["pomme", "banane", "cerise"]` | ✅ Oui              | Quand les données peuvent **changer** pendant l’exécution (ex : liste de joueurs, scores). |
+| **`tuple`** | Collection **ordonnée** mais **immuable** (on ne peut pas modifier, ajouter ou supprimer un élément après création).        | `("pomme", "banane", "cerise")` | ❌ Non              | Quand les données doivent **rester fixes** (ex : coordonnées GPS, date, configuration).    |
+
+---
+
+##### 📌 Exemple concret
+
+```python
+# Liste
+fruits = ["pomme", "banane"]
+fruits.append("cerise")  # OK
+fruits[0] = "orange"     # OK
+
+# Tuple
+coordonnees = (45.76, 4.84)
+# coordonnees[0] = 50.0  # ❌ Erreur : tuple immuable
+```
+
+---
+
+##### 📍 Particularités des tuples
+
+1. **Plus rapide** à manipuler que les listes (car fixe).
+2. Peut être utilisé comme **clé dans un dictionnaire** (les listes ne peuvent pas).
+3. Peut contenir **des listes** à l’intérieur (mais alors ces listes restent modifiables).
+4. Pour créer un tuple avec un seul élément :
+
+   ```python
+   t = (5,)  # la virgule est obligatoire
+   ```
+
+---
+
+💡 **Astuce pédagogique**
+Je te conseille de montrer un exemple **réaliste** :
+
+- **Liste** : liste des pseudos connectés à un serveur → change tout le temps.
+- **Tuple** : taille d’écran en pixels `(1920, 1080)` → ne change pas.
+
+---
+
+Si tu veux, je peux te préparer un **schéma mémoire** qui montre que la liste a un "conteneur extensible" alors que le tuple est "verrouillé" une fois créé, pour l’ajouter à ton Jour 5.
+Veux-tu que je te fasse ce schéma ?
+
+---
+
+Voici la réponse structurée pour que ce soit clair dans ton support de cours du **Jour 5** :
+
+---
+
+### 🔄 Conversions entre types en Python
+
+#### 1️⃣ Tuple → Liste
+
+```python
+t = (1, 2, 3)
+ma_liste = list(t)
+print(ma_liste)  # [1, 2, 3]
+```
+
+💡 Utilise `list()` pour transformer un **tuple** en **liste modifiable**.
+
+---
+
+#### 2️⃣ Liste → Tuple
+
+```python
+ma_liste = [1, 2, 3]
+t = tuple(ma_liste)
+print(t)  # (1, 2, 3)
+```
+
+💡 Utilise `tuple()` pour rendre la collection **immuable**.
+
+---
+
+#### 3️⃣ Dictionnaire → Liste
+
+Il faut décider **ce que tu veux extraire** :
+
+```python
+d = {"a": 1, "b": 2}
+
+cles = list(d.keys())      # ['a', 'b']
+valeurs = list(d.values()) # [1, 2]
+paires = list(d.items())   # [('a', 1), ('b', 2)]
+```
+
+💡 `.items()` donne une liste de **tuples** `(clé, valeur)`.
+
+---
+
+#### 4️⃣ Peut-on mélanger les types dans une liste ?
+
+✅ Oui, une liste peut contenir **différents types** :
+
+```python
+melange = [42, "texte", 3.14, True, [1, 2], {"a": 1}]
+print(melange)
+```
+
+⚠️ **Conseil** : c’est possible, mais souvent il vaut mieux garder **un type cohérent** pour éviter les erreurs.
+
+---
+
+#### 📌 Astuce pour ton fils
+
+Pour qu’il retienne :
+
+- **`list()`** : transforme en liste
+- **`tuple()`** : transforme en tuple
+- **`dict.keys()` / `.values()` / `.items()`** : pour extraire du dictionnaire
+
+---
+
+Si tu veux, je peux te faire **une fiche visuelle** avec un tableau de toutes les conversions Python courantes (`list`, `tuple`, `dict`, `set`, `str`) à coller dans le cours.
+Veux-tu que je te prépare ça ?
+
+---
+
 ### 1.2 Les dictionnaires (`dict`)
 
 - Contiennent des **paires clé/valeur**.
