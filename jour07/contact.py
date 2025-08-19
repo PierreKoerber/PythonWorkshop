@@ -1,5 +1,4 @@
-import json
-import os
+
 import utils
 
 utils.affichage("Carnet de contact version 3")

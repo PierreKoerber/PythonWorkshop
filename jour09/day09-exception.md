@@ -1,7 +1,3 @@
-Très bonnes questions 👌 Tu touches là à un point important : en Python, il existe à la fois des **exceptions génériques** (valables partout) et des **exceptions spécifiques** (propres à une fonction, un module ou une opération).
-
----
-
 # 🔹 1. Exceptions génériques
 
 - **`Exception`** : la classe de base de toutes les exceptions _utilisables_ (sauf cas très rares).
