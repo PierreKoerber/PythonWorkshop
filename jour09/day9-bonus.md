@@ -1,5 +1,3 @@
-Yes ! On ajoute la **gestion des paramètres en ligne de commande** (CLI) au projet, puis je te **re-génère le plan** des Jours 8 & 9 pour intégrer ça proprement.
-
 ---
 
 # 🔧 Ajout : paramètres dans `__main__` (CLI)
