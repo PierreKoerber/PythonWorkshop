@@ -104,3 +104,12 @@ https://jupyter.org/try-jupyter/lab/
 3. Sécuriser la **sauvegarde des fichiers** (backup, écriture atomique).
 4. Ajouter un **journal** (_logging_) simple pour diagnostiquer.
 5. Écrire **quelques tests** de base pour vérifier les fonctions clés.
+
+---
+
+### 📚 Jour 10 — Finalisation, livraison & démo
+
+1. Finaliser les fonctionnalités essentielles du projet
+2. Polir l’expérience (messages, erreurs, aide CLI)
+3. Préparer une **démo** courte et fluide
+4. “Livrer” : README, export, sauvegarde, (optionnel) exécutable
